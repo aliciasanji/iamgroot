@@ -5,9 +5,11 @@
  */
 
 @font-face {
-  font-family: "Lucida Handwritting";
-  src: url("../fonts/LHANDW.TTF");
+  font-family: "Sophia";
+  src: url("../fonts/Sophia.ttf");
 }
+
+
 
 body,
 html {
@@ -32,7 +34,7 @@ h6 {
 }
 
 .intro-header {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    /*padding-top: 50px;*/ /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
     color: #f8f8f8;
@@ -49,6 +51,10 @@ h6 {
         background-image: url('../img/fotos/foto2_mobile.jpg') no-repeat center center;
         background-position: center 0px;
   }
+
+  #countdown-days, #countdown-hours, #countdown-minutes, #countdown-seconds {
+    font-size: 34px;
+  }
 }
 .intro-message {
     position: relative;
@@ -58,7 +64,7 @@ h6 {
 
 .intro-message-header {
     position: relative;
-    padding-top: 5%;
+    /*padding-top: 5%;*/
     padding-bottom: 5%;
 }
 
