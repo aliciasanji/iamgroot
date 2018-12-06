@@ -1,0 +1,143 @@
+<!-- Navigation -->
+
+<section id="home">
+<!-- Header Section -->
+	<div class="intro-header">
+
+		
+		<!-- /.container -->
+        <div class="container">
+    <div class="row text-center">
+      <div class="col-lg-8 col-lg-offset-2">
+        <!--<hr class="small">-->
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <!--<h2 class="section-heading" style="color: #ffffff;">Solo faltan</h2>-->
+            <!--<hr class="small">-->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <div class="introduction-item">
+              <h1>
+                <strong>
+                  <p id="countdown-days"></p>
+                </strong>
+              </h1>
+              <h4>
+                <strong>días</strong>
+              </h4>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <div class="introduction-item">
+              <h1>
+                <strong>
+                  <p id="countdown-hours"></p>
+                </strong>
+              </h1>
+              <h4>
+                <strong>horas</strong>
+              </h4>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <div class="introduction-item">
+              <h1>
+                <strong>
+                  <p id="countdown-minutes"></p>
+                </strong>
+              </h1>
+              <h4>
+                <strong>minutos</strong>
+              </h4>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-6">
+            <div class="introduction-item">
+              <h1>
+                <strong>
+                  <p id="countdown-seconds"></p>
+                </strong>
+              </h1>
+              <h4>
+                <strong>segundos</strong>
+              </h4>
+            </div>
+          </div>
+        </div>
+        <!-- /.row (nested) -->
+        <hr class="small">
+      </div>
+      <!-- /.col-lg-10 -->
+    </div>
+    <!-- /.row -->
+  </div>
+  <!-- /.container -->
+  <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Jul 13, 2019 16:45:00").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+                // Get todays date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now an the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Output the result in an element with id="demo"
+                document.getElementById("countdown-days").innerHTML = days;
+                document.getElementById("countdown-hours").innerHTML = hours;
+                document.getElementById("countdown-minutes").innerHTML = minutes;
+                document.getElementById("countdown-seconds").innerHTML = seconds;
+
+
+                // If the count down is over, write some text 
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("countdown-days").innerHTML = "0";
+                    document.getElementById("countdown-hours").innerHTML = "0";
+                    document.getElementById("countdown-minutes").innerHTML = "0";
+                    document.getElementById("countdown-seconds").innerHTML = "0";
+                }
+            }, 1000);
+        </script>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message-header" style="height: 420px;">
+                        <!--<h1>{{ site.title }}</h1>-->
+                        <!--<h3>{{ page.subTitle }}</h3>-->
+                        <!--<img src="img/fotos/foto1.jpg" style="max-width: 80%;" />-->
+                        <!--<hr class="intro-divider">-->
+                        <!--
+                        <ul class="list-inline intro-social-buttons">
+                            <li>
+                                <a href="https://twitter.com/{{ site.twitter_account }}" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">TWITTER</span></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/{{ site.github_account }}" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">GITHUB</span></a>
+                            </li>
+                            <li>
+                                <a href="mailto:{{ site.email }}" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-envelope fa-fw"></i> <span class="network-name">E-MAIL</span></a>
+                            </li>
+                        </ul>
+                    -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+	</div>
+	<!-- /.intro-header -->
+</section>

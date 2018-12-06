@@ -1,1 +1,23 @@
-theme: jekyll-theme-cayman
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
+
+url: 
+title: Ali y Eli se casan
+email: 
+twitter_account: 
+github_account: 
+author: 
+description: > # "Write an awesome description for your new site here. 
+  You can edit this line in _config.yml. It will appear in your document 
+  head meta (for Google search results) and in your feed.xml site 
+  description.
+credits: 
+
+# ----------------------- #
+#    Jekyll & Plugins     #
+# ----------------------- #
+
+# Build settings
+markdown: kramdown
+permalink: pretty
